@@ -1,1 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Admin Dashboard</title>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header id="header">
+    <h1 id="header-title">Dashboard</h1>
+    <navbar id="navbar">
+      <ul id="header-navbar-primarylist">
+        <li><a href="#">Home</a></li>
+        <li><a href="#">Profile</a></li>
+        <li><a href="#">Messages</a></li>
+        <li><a href="#">History</a></li>
+        <li><a href="#">Tasks</a></li>
+        <li><a href="#">Communities</a></li>
+      </ul>
+      <ul id="header-navbar-secondarylist">
+        <li><a href="#">Settings</a></li>
+        <li><a href="#">Support</a></li>
+        <li><a href="#">Privacy</a></li>
+      </ul>
+    </navbar>
+  </header>
+  <main>
+    <section id="section-upper">
+        <form id="section-upper-search-form">
+          <button id="section-upper-search-form-button">
+          </button>
+          <input type="text" 
+                 placeholder="Search" 
+                 id="section-upper-search-form-input">
+        </form>
+        <div id="section-upper-profile">
+          <button id="section-upper-profile-notification-button"></button>
+          <div id="section-upper-profile-user">
+            <button id="section-upper-user-profile-button"></button>
+            <p id="section-upper-profile-user-name">@userNick</p>
+          </div>
+        </div>
+        <div id="section-upper-welcome">
+          <img src="https://icons.veryicon.com/png/o/miscellaneous/two-color-icon-library/user-286.png" id="section-upper-welcome-img"></img>
+          <p id="section-upper-welcome-text">Hi there, </p>
+          <p id="section-upper-welcome-username"> Name Surname (@userNick)</p>
+        </div>
+        <div id="section-upper-content">
+          <button id="section-upper-content-new">New</button>
+          <button id="section-upper-content-upload">Upload</button>
+          <button id="section-upper-content-share">Share</button>
+        </div>
+      </section>
+    <section id="section-principal">
+      <div id="section-principal-projects">
+          <h2 id="section-principal-projects-title">Tus proyectos</h2>
+          <div id="section-principal-projects-1" class="project 1">
+            <h3 id="section-principal-projects-1-title">Project 1 name</h3>
+            <p id="section-principal-projects-1-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur molestie neque ut lectus semper imperdiet. Maecenas cursus cursus augue, a imperdiet nisi pellentesque non. </p>
+            <button id="section-principal-projects-1-favorite-button" class="fav"></button>
+            <button id="section-principal-projects-1-watching-button" class="watch"></button>
+            <button id="section-principal-projects-1-share-button" class="share"></button>
+          </div>
+          <div id="section-principal-projects-2" class="project 2">
+            <h3 id="section-principal-projects-2-title">Project 2 name</h3>
+            <p id="section-principal-projects-2-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur molestie neque ut lectus semper imperdiet. Maecenas cursus cursus augue, a imperdiet nisi pellentesque non. </p>
+            <button id="section-principal-projects-2-favorite-button" class="fav"></button>
+            <button id="section-principal-projects-2-watching-button" class="watch"></button>
+            <button id="section-principal-projects-2-share-button" class="share"></button>
+          </div>
+          <div id="section-principal-projects-3" class="project 3">
+            <h3 id="section-principal-projects-3-title">Project 3 name</h3>
+            <p id="section-principal-projects-3-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur molestie neque ut lectus semper imperdiet. Maecenas cursus cursus augue, a imperdiet nisi pellentesque non. </p>
+            <button id="section-principal-projects-3-favorite-button" class="fav"></button>
+            <button id="section-principal-projects-3-watching-button" class="watch"></button>
+            <button id="section-principal-projects-3-share-button" class="share"></button>
+          </div>
+          <div id="section-principal-projects-4" class="project 4">
+            <h3 id="section-principal-projects-4-title">Project 4 name</h3>
+            <p id="section-principal-projects-4-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur molestie neque ut lectus semper imperdiet. Maecenas cursus cursus augue, a imperdiet nisi pellentesque non. </p>
+            <button id="section-principal-projects-4-favorite-button" class="fav"></button>
+            <button id="section-principal-projects-4-watching-button" class="watch"></button>
+            <button id="section-principal-projects-4-share-button" class="share"></button>
+          </div>
+          <div id="section-principal-projects-5" class="project 5">
+            <h3 id="section-principal-projects-5-title">Project 5 name</h3>
+            <p id="section-principal-projects-5-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur molestie neque ut lectus semper imperdiet. Maecenas cursus cursus augue, a imperdiet nisi pellentesque non. </p>
+            <button id="section-principal-projects-5-favorite-button" class="fav"></button>
+            <button id="section-principal-projects-5-watching-button" class="watch"></button>
+            <button id="section-principal-projects-5-share-button" class="share"></button>
+          </div>
+          <div id="section-principal-projects-6" class="project 6">
+            <h3 id="section-principal-projects-6-title">Project 6 name</h3>
+            <p id="section-principal-projects-6-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur molestie neque ut lectus semper imperdiet. Maecenas cursus cursus augue, a imperdiet nisi pellentesque non. </p>
+            <button id="section-principal-projects-6-favorite-button" class="fav"></button>
+            <button id="section-principal-projects-6-watching-button" class="watch"></button>
+            <button id="section-principal-projects-6-share-button" class="share"></button>
+          </div>
+        </div>
+      <div id="section-principal-announcements">
+          <h2 id="section-principal-announcements-title">Announcements</h2>
+          <div id="section-principal-announcements-1" class="announcement">
+            <h3 id="section-principal-announcements-1-title">Announcement</h3>
+            <p id="section-principal-announcements-1-content">Lorem ipsum dolor sit amet, consect adipiscing elit.</p>
+          </div>
+          <hr id="section-principal-announcements-separator-1" class="separator">
+          <div id="section-principal-announcements-2" class="announcement">
+            <h3 id="section-principal-announcements-2-title">Announcement</h3>
+            <p id="section-principal-announcements-2-content">Lorem ipsum dolor sit amet,  ectetur adipiscing elit.</p>
+          </div>
+          <hr id="section-principal-announcements-separator-2" class="separator">
+          <div id="section-principal-announcements-3" class="announcement">
+            <h3 id="section-principal-announcements-3-title">Announcement</h3>
+            <p id="section-principal-announcements-3-content">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+          </div>
+        </div>
+      <div id="section-principal-trending">
+          <h2 id="section-principal-trending-title">Trending</h2>
+          <div id="section-principal-trending-users">
+            <div id="section-principal-trending-users-1" class="trending user1">
+              <img id="section-principal-trending-users-1-img" class="trendingImg" src="https://icons.veryicon.com/png/o/miscellaneous/two-color-icon-library/user-286.png"></img>
+              <h4 id="section-principal-trending-users-1-username" class="username">@user</h4>
+              <p id="section-principal-trending-users-1-description" class="description">description</p>
+            </div>
+            <div id="section-principal-trending-users-2" class="trending user2">
+              <img id="section-principal-trending-users-2-img" class="trendingImg" src="https://icons.veryicon.com/png/o/miscellaneous/two-color-icon-library/user-286.png"></img>
+              <h4 id="section-principal-trending-users-2-username" class="username">@user</h4>
+              <p id="section-principal-trending-users-2-description" class="description">description</p>
+            </div>
+            <div id="section-principal-trending-users-3" class="trending user3">
+              <img id="section-principal-trending-users-3-img" class="trendingImg" src="https://icons.veryicon.com/png/o/miscellaneous/two-color-icon-library/user-286.png"></img>
+              <h4 id="section-principal-trending-users-3-username" class="username">@user</h4>
+              <p id="section-principal-trending-users-3-description" class="description">description</p>
+            </div>
+          </div>
+        </div>
+    </section>
+  </main>
+  <footer>
+    <script src="script.js"></script>
+  </footer>
+</body>
+</html>
 
