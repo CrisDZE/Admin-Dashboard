@@ -1,1 +1,368 @@
+body{
+  display:grid;
+  grid-template-columns: 160px auto;
+  grid-template-rows: 20% auto;
+  
+  margin: 0 auto;
+  
+  font-family: "Roboto Condensed", sans-serif;
+}
+  header{  
+    grid-column: 1;
+    grid-row: 1/3;
+    
+    display: grid;
+    grid-template-columns: auto;
+    grid-template-rows: 20vh auto;
+    
+    min-width: 160px;
+    height: 100vh;
+    position: fixed;
+    
+    background-color: #6CB4EE;
+    color: white;
+  }
+    #header-title{
+      grid-column: 1;
+      grid-row: 1;
+      
+      display:flex;
+      align-items: center;
+      justify-content:center;
+      
+      font-size: 180%;
+    }
+    #navbar {
+      grid-row: 2;
+      
+      display:grid;
+      grid-template-rows: auto auto;
+    }
+      #header-navbar-primarylist{
+        grid-row: 1;
+      }
+      #header-navbar-secondarylist{
+        grid-row: 2;
+      }
+        ul{
+          list-style:none;
+        }
+          li{
+            margin:2vw 0 0 0;
+            
+            font-size:100%;
+          }
+            li a{
+              text-decoration:none;
+              color:white;
+            }
+              li a:hover{
+                color: black;
+                background-color:white;
+                
+                padding: 3px 5px;
+                
+                border-radius: 15px;
+              }
+  main{
+    grid-column: 2;
+    grid-row: 1/3;
+    
+    display: grid;
+    grid-template-rows: 15vh auto;
+}
+    #section-upper{
+      grid-row:1;
+      
+      display:grid;
+      grid-template-columns: 70% auto;
+      grid-template-rows: 40% auto;
+      grid-row-gap:10%;
+      
+    }
+      #section-upper-search-form{
+        grid-column:1;
+        grid-row:1;
+        
+        display:flex;
+        justify-content:center;
+        align-items:flex-end;
+      }
+        #section-upper-search-form-button{
+          background-image: url(https://cdn-icons-png.flaticon.com/512/709/709592.png);
+          background-repeat: no-repeat;
+          background-position: center center;
+          background-size: 15px;
+          
+          border-radius: 100%;
+          border:none;
+          
+          margin-right:2%;
+          width: 25px;
+          height:25px;
+          
+          cursor:pointer;
+        }
+        #section-upper-search-form-input{
+          width:400px;
+          height: 25px;
+          border-radius: 15px;
+          background-color:    #e5e5e5  ;
+          border:none;
+        }
+          #section-upper-search-form-input:focus{
+            outline:none;
+            border: solid 3px #6CB4EE;
+          }
+      #section-upper-profile{
+        grid-column:2;
+        grid-row:1;
+  
+        display:flex;
+        justify-content:center;
+        align-items:baseline;
+        padding-top:3%;
+      }
+        #section-upper-profile-notification-button{
+          background-image: url(https://www.svgrepo.com/show/31480/notification-bell.svg);
+          background-repeat: no-repeat;
+          background-position: center center;
+          background-size: 18px;
+          
+          border-radius: 100%;
+          border:none;
+          
+          margin-right:25%;
+          width: 25px;
+          height:25px;
+          
+          cursor:pointer;
+        }
+        #section-upper-profile-user{
+          display:flex;
+          justify-content:center;
+          align-items: end;
+        }
+          #section-upper-user-profile-button{
+            background-image: url(https://icons.veryicon.com/png/o/miscellaneous/two-color-icon-library/user-286.png);
+            background-repeat: no-repeat;
+            background-position: center center;
+            background-size: 50px;
 
+            border-radius: 100%;
+            border:none;
+
+            width: 50px;
+            height:50px;
+
+            cursor:pointer; 
+          }
+          #section-upper-profile-user-name{
+            margin-left:2%;
+          }
+      #section-upper-welcome{
+        display:flex;
+        justify-content: flex-start;
+        align-items: center;
+        
+        margin-left: 10%;
+      }
+        #section-upper-welcome-img{
+          max-width: 9vh;
+        }
+        #section-upper-welcome-text{
+          font-size:3vh;
+        }
+        #section-upper-welcome-username{
+          font-size:3vh;
+          margin-left:3%;
+          font-weight: bold;
+        }
+      #section-upper-content{
+        grid-column:2;
+        grid-row:2;
+        
+        display:flex;
+        justify-content: center;
+        align-items: center;
+      }
+        #section-upper-content button{
+          margin: 0 2% 0 2%;
+
+          background-color:#6CB4EE;
+          color:white;
+
+          font-weight: bold;
+          
+          border-radius: 15px;
+          border: none;
+
+          min-width:75px;
+          min-height: 35px;
+
+          cursor:pointer;
+        }
+          #section-upper-content button:hover{
+            background-color:white;
+            color:#6CB4EE;
+            border:1px solid #6CB4EE;
+          }
+    #section-principal{
+      grid-row:2;
+      
+      display:grid;
+      grid-template-columns: auto 20%;
+      grid-template-rows: auto auto;
+      
+      padding-left: 2%;
+      margin-top:2%;
+      
+      max-height: 100vh;
+      background-color:#e5e5e5;
+    }
+      #section-principal-projects{
+        grid-column:1;
+        grid-row:1/3;
+        
+        display:grid;
+        grid-template-columns: auto;
+        grid-template-rows: 6vh auto auto auto;
+      }
+        #section-principal-projects h2{
+          grid-column:1/end;
+          grid-row:1;
+        }
+        #section-principal-projects .project{
+          grid-column:auto;
+          grid-row:auto;
+          
+          border-radius: 20px;
+          border: 2px solid #6CB4EE;
+          
+          background-color: white;
+          
+          min-width:290px;
+          margin: 5%; 
+          padding: 2%;
+          
+          display:grid;
+          grid-template-columns: 33% 33% 33%;
+          grid-template-rows: auto auto auto;
+        }
+          #section-principal-projects .project h3{
+            grid-column:1/end;
+            grid-row:1;
+          }
+          #section-principal-projects .project p{
+            grid-column:1/end;
+            grid-row:2;
+          }
+          #section-principal-projects .project button{
+            grid-row: 3;
+          
+            border-radius: 100%;
+            border:none;
+          
+            width: 25px;
+            height:25px;
+          
+            cursor:pointer;
+            margin: auto;
+          }
+            .fav{
+              grid-column:1;
+
+              background-image: url(https://staging.svgrepo.com/show/22427/star.svg);
+              background-repeat: no-repeat;
+              background-position: center center;
+              background-size: 20px;
+            }
+            .watch{
+              grid-column:2;
+
+              background-image: url(https://www.svgrepo.com/show/57947/eye.svg);
+              background-repeat: no-repeat;
+              background-position: center center;
+              background-size: 20px;
+            }
+            .share{
+              grid-column:3;
+
+              background-image: url(https://www.svgrepo.com/show/13662/share.svg);
+              background-repeat: no-repeat;
+              background-position: center center;
+              background-size: 20px;
+            }
+      #section-principal-announcements{
+        grid-column:2;
+        grid-row:1;
+        
+      }
+        #section-principal-announcements-title{
+          margin-left:3%;
+        }
+          .announcement{
+            display: grid;
+            background-color: white;
+            border-radius:15px;
+            grid-gap:0;
+          }
+            .announcement h3,  .announcement p{
+              margin:3% 5%;
+              
+          }
+            .announcement h3{
+              font-size: 1em;
+            }
+            .announcement p{
+              font-size:0.8em;
+            }
+          .separator{
+            width:90%;
+            color:#6CB4EE;
+          }
+      #section-principal-trending{
+        grid-column:2;
+        grid-row:2;
+      }
+        #section-principal-trending-title{
+           margin-left:3%;
+        }
+        #section-principal-trending-users{
+        }
+          .trending{
+            margin:1vh;
+            background-color:white;
+            display:grid;
+            grid-template-columns:auto auto;
+            grid-template-rows:auto auto;
+            border-radius:25px 0 15px 25px;
+            max-width:150px;
+          }
+            .user1{
+            }
+            .user2{
+            }
+            .user3{
+            }
+            .trendingImg{
+              margin:0;
+              grid-column:1;
+              grid-row:1/end;
+              max-width: 6vh;
+              display:flex;
+              align-items:center;
+              justify-content:center;
+            }
+            .username{
+              margin:0;
+              grid-column:2;
+              display:flex;
+              align-items:center;
+            }
+            .description{
+              margin:0;
+              grid-column:2;
+              display:flex;
+              align-items:center;
+            }
